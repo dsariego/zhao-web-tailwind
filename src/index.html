@@ -1,26 +1,110 @@
+<!-- Web page develop by Daniel Sariego Alvarez, UOC 2021-->
+
 <!DOCTYPE html>
 
-<html>
+<html lang="es-ES">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <!-- Info SEO Descriptor -->
+    <meta name="description" content="El Huérfano de los Zhao, un clásico épico del siglo XIII, escrito por Ji Juxiang">
+    <meta name="author" content="Daniel Sariego Álvarez">
+    <!-- Mobile specific meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>LogoIpsum - El Huérfano de los Zhao</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="test image" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+
+  <body class="flex flex-col font-sans bg-pattern bg-pri-lightest text-pri-darkest m-0 box-border text-2xl mb:text-lg lp:test-xl ds:text-2xl">
+    <a id="top"></a>
+    <!-- Header web -->
+    <header class="block w-full bg-pri-dark border-b-4 border-pri-darkest h-20">     
+      <div class="block m-auto p-3 max-w-screen-ds"> 
+        <img class="float-left w-max mt-2.5 align-middle" src="./assets/images/logoipsum.svg" alt="Logo compañia" title="Logo compañia">
+        <!-- Bootstrap component: Nav -->
+        <nav class="flex flex-wrap items-center justify-between py-2 relative float-right">
+          <div class="flex items-center justify-between m-auto px-3 w-max">
+            <button class="mb:hidden navbar-toggler border border-borde p-2 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars w-fit"></i>
+            </button>
+            <div class="hidden mb:flex basis-auto items-center grow h-12" id="navbarNavAltMarkup">
+              <div class="mb-0 pl-0">
+                <a class="link-active" href="#">Inicio</a>
+                <a class="link" href="./members.html">Miembros</a>
+                <a class="link cursor-pointer">Artículos</a>
+                <a class="link cursor-pointer">Galería</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="block m-auto">
+      <section class="grid grid-flow-col max-w-max h-fit max-w-screen-ds grid-rows-4 grid-cols-1 pl-5 pr-2
+                      mb:grid-flow-row mb:grid-cols-2 mb:grid-rows-5 mb:gap-x-2 mb:gap-y-4">
+        <article class="z-5 float-right relative col-span-1 row-span-1 bg-pri-dark w-full p-4 rounded-b-3xl mb-8 pt-2 shadow-xl
+                      mb:grid mb:col-start-2 mb:col-span-1 mb:row-start-1 mb:row-span-2">
+          <p class="text-sm italic mt-4 mb-6 pt-4 pb-4">Grupo de teatro <strong>LogoIpsum</strong> presenta:</span>
+          <h1 class="font-serif p-2 text-8xl ds:text-8xl lp:text-7xl mb:text-6xl font-bold mb-6">El <span class="text-pri-lightest">Huérfano</span><br /> de los <span class="text-pri-lightest">Zhao</span></h1>
+          <p class="text-xl">Una obra de <strong>Ji Junxiang</strong></p>
+        </article>
+        <article class="flex relative z-1 float-left col-span-1 row-span-1 mb-8 bg-transparent 
+                    mb:col-start-1 mb:col-span-1 mb:row-start-2 mb:row-span-2">
+          <blockquote class="z-10 text-sm absolute left-4 bottom-4 p-2 h-fit text-left w-4/5 text-pri-lightest bg-bgart rounded-2xl">
+            <p>El huérfano de Zhao es una obra china de la era Yuan, atribuida al dramaturgo del siglo XIII Ji Junxiang (紀君祥). Está clasificada en el género de dramas zaju, y gira en torno al tema central de la venganza. <strong>"Épica y trágica"</strong></p>
+          </blockquote>
+          <img class="sepia-[.50] object-cover w-screen shadow-xl rounded-3xl align-middle h-full" src="https://picsum.photos/id/832/600/400">
+        </article>
+        <article class="flex relative z-1 float-left col-span-1 row-span-1 mb-8 bg-transparent
+                    mb:grid mb:col-start-2 mb:col-span-1 mb:row-start-3 mb:row-span-2">
+          <img class="sepia-[.50] object-cover w-screen shadow-xl rounded-3xl align-middle h-full" src="https://picsum.photos/id/460/600/400">
+          <blockquote class="z-10 text-sm absolute left-4 bottom-4 p-2 h-fit text-left w-4/5 text-pri-lightest bg-bgart rounded-2xl">
+            <p>"Una historia que se nutre de un relato situado en la memoria de casi veinte siglos antes y que ha devenido mito"</p>
+          </blockquote>
+        </article>
+        <article class="flex relative z-1 float-left col-span-1 row-span-1 mb-8 bg-transparent
+                    mb:grid mb:col-start-1 mb:col-span-1 mb:row-start-4 mb:row-span-2">
+          <img class="sepia-[.50] object-cover w-screen shadow-xl rounded-3xl align-middle h-full" src="https://picsum.photos/id/998/600/400">
+          <blockquote class="z-10 text-sm absolute left-4 bottom-4 p-2 h-fit text-left w-4/5 text-pri-lightest bg-bgart rounded-2xl">
+            <p>Este teatro fue la primera obra china conocida en Europa. Te invitamos a disfrutar de la obra con nuestra representación.</p>
+          </blockquote>
+        </article>
+        <article class="item item5">   
+          
+        </article>
+      </section>
+    </main>
+    
+
+    <!-- Footer web -->
+    <footer class="block w-full bg-pri-dark border-t-4 p-12 border-pri-darkest h-fit">
+      <div class="m-auto p-1 max-w-screen-ds text-white"> 
+        <ul class="list-none p-0 mb-4">
+          <li>Compañia de Teatro <strong>logoIpsum</strong></li>
+          <li>C. Ignacio Martínez de Azcoitia, 9</li>
+          <li>CP.34001 Palencia</li>
+          <li>+34 902195588</li>
+          <li>logoipsum@gmail.com</li>
+        </ul>
+        <ul class="list-none p-0 mb-4">
+          <li><i class="fab fa-youtube"></i> Youtube</li>
+          <li><i class="fab fa-twitter"></i> Twiter</li>
+          <li><i class="fab fa-twitch"></i> Twitch</li>
+          <li><i class="fab fa-facebook"></i> Facebook</li>
+        </ul>
+        <img class="float-left mt-2.5 align-middle" src="./assets/images/logoipsum.svg" alt="Logo compañia" title="Logo compañia">
+        <!-- Bootstrap component: Nav -->
+        <nav class="flex flex-wrap items-center justify-between py-2 relative float-right">
+          <div class="flex-col items-center list-none m-auto px-3 w-max">
+            <a class="block mb:inline link-active" href="#top">Inicio</a>
+            <a class="block mb:inline link" aria-current="page" href="./members.html">Miembros</a>
+            <a class="block mb:inline link cursor-pointer">Artículos</a>
+            <a class="block mb:inline link cursor-pointer">Galería</a>
+          </div>
+        </nav>
+      </div>
+    </footer>
+
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>

@@ -5,7 +5,8 @@
 
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
-
+import '@fortawesome/fontawesome-free/js/all.min.js';
+import "tailwindcss/tailwind.css"
 /**
  * Write any other JavaScript below
  */
